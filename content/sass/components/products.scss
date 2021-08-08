@@ -21,10 +21,10 @@
   .products__rows-wrapper {
     .products__row--edit {
       margin-bottom: 100px;
-      &:nth-last-of-type(odd){
+      &:nth-of-type(odd){
         direction: rtl;
       }
-      &:nth-last-of-type(even){
+      &:nth-of-type(even){
         direction: ltr;
       }
       .outer {
@@ -59,6 +59,7 @@
         .product__brief__prices {
           display: flex;
           justify-content: space-between;
+          direction: rtl;
 
           .product__brief__prices__companies,
           .product__brief__prices__customer {
