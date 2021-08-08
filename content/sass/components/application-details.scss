@@ -1,0 +1,35 @@
+.application-details{
+  .application-details__right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    // .application-details__customer{}
+    .application-details__delegate{
+      margin-top: -10px;
+    }
+    h4{
+      font-size: 25px;
+      margin-bottom: 25px;
+      font-weight: bold;
+      color: $colorBlue;
+    }
+  }
+  .application-details__left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    .application-details__dealer{
+      margin-top: 60px;
+    }
+    // .application-details__maintenance{}
+    h4{
+      font-size: 25px;
+      margin-bottom: 25px;
+      font-weight: bold;
+      color: $colorBlue;
+    }
+  }
+
+}

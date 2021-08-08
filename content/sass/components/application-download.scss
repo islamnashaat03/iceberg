@@ -1,0 +1,58 @@
+.application-download{
+  background-image: url('../images/Group-244071.png');
+  background-size: cover;
+  padding: 25% 0;
+  color: $colorWhite;
+  background-position-x: 100%;
+  .application-download__wrapper{
+    h3{
+      font-weight: bold;
+      margin-bottom: 50px;
+      font-size: calc();
+    }
+    p{
+      margin: 0;
+      text-align: $start;
+      margin-#{$start}: 8px;
+      font-size: 14px;
+    }
+    .stores-btns{
+      // justify-content: center;
+      .store-btn{
+      color: #fff;
+      border: 1px solid #fff;
+      margin: 0 10px;
+      padding: 10px 5px;
+      justify-content: center;
+      min-width: 160px;
+      flex: 0 0 45%;
+     
+      border-radius: 6px;
+      span{
+        font-size: 30px;
+      }
+    }
+    .play-store-btn{
+      background-color: $colorWhite;
+      color: $colorPurple;
+    }
+    }
+    
+  }
+}
+@media screen and (max-width:992px) {
+  .application-download{
+    background-image: none;
+    background-color: $colorPurple;
+    .application-download__wrapper{
+      .stores-btns{
+      flex-direction: column;
+      .store-btn{
+        margin: 10px 0;
+        width: 75%;
+      }
+    }
+    }
+    
+  }
+}

@@ -24,18 +24,21 @@
     .application-brief__stores {
       margin-bottom: 25px;
       @extend .flex-center;
-      // justify-content: space-around;
+      flex-wrap: wrap;
+      justify-content: space-around;
 
       .application-brief__stores__store {
         margin-right: 15px;
         @extend .flex-center;
-        font-size: calc(14px + ((20 - 14) * ((100vw - 1366px) / (1920 - 1366))));
-        flex: 0 0 30%;
+        font-size: calc(17px + ((23 - 17) * ((100vw - 1366px) / (1920 - 1366))));
         justify-content: center;
         align-items: center;
 
         .application-brief__stores__store__paragraph {
           margin-bottom: 0;
+        }
+        .application-brief__stores__store__paragraph--edit{
+          margin-left: -5px;
         }
 
         img {
@@ -78,7 +81,7 @@
     .application-brief{
       .application-brief__stores{
         .application-brief__stores__store{
-          font-size: calc(11px + ((18 - 11) * ((100vw - 320px) / (1366 - 320))));
+          font-size: calc(10px + ((16 - 10) * ((100vw - 320px) / (1366 - 320))));
         }
       }
     }
