@@ -1,0 +1,170 @@
+.main-heaader {
+  .col--edit--background {
+    background-image: url(../images/back1.svg);
+
+    .main-header__brief {
+      margin-top: 100px;
+      width: 80%;
+
+      .main-header__brief__buttons {
+        display: flex;
+        margin-bottom: 75px;
+
+        .products-btn {
+          @extend.my-button-1;
+          margin-#{$end}: 25px;
+
+        }
+        .app-btn {
+          @extend.my-button-2;
+          
+        }
+        .products-btn,.app-btn{
+          padding: 12px 20px;
+        }
+      }
+
+      .main-header__brief__first-head {
+        color: $colorPurple;
+        margin-bottom: 50px;
+
+      }
+
+      .main-header__brief__main-head {
+        color: $colorBlue;
+        font-size: calc(44px + ((50 - 44) * (100vw - 1366px) / (1920 - 1366)));
+        margin-bottom: 50px;
+        line-height: 1.6;
+      }
+
+      .main-header__brief__paragrapgh {
+        font-size: calc(18px + ((24 - 16) * (100vw - 1366px) / (1920 - 1366)));
+        margin-bottom: 50px;
+      }
+
+    
+    }
+  }
+    .col--header--edit{
+      // background-image: url(../images/choclate.png);
+      // background-size: cover;
+      padding-#{$end}: 0;
+      // display: flex;
+      // align-items: flex-end;
+      position: relative;
+      .carousel-div{
+        width: 65%;
+        padding-#{$start}:15px ;
+        color: $colorWhite;
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        
+        .carousel-div__title{
+          color:$colorWhite ;
+          background-color: $colorYellow;
+          padding: 5px 15px;
+          border-radius: 15px;
+          margin-bottom: 20px;
+          font-size: 15px;
+          
+        }
+        .owl-carousel{
+          margin: 15px 0 ;
+          
+          .owl-carousel__item{
+            .owl-carousel__first-head{
+              font-size: calc(26px + ((32 - 26) * ((100vw - 1366px ) / (1920 - 1366 ))));
+              font-weight: bold;
+              width: 85%;
+              margin-bottom: 20px;
+            }
+            .owl-carousel__second-head{
+              font-size:calc(16px + ((22 - 16) * ((100vw - 1366px) / (1920 - 1366))));
+              width: 85%;
+            }
+          }
+          .owl-nav {
+            position: absolute;
+            bottom: -30px;
+            left: -50px;
+            font-size: 35px;
+            .owl-next{
+              background-image: url(../images/left.png);
+              background-repeat: no-repeat;
+              width:30px;
+              height:30px;
+              opacity: 0.5;
+              margin-#{$start}: 10px;
+              &:hover{
+                opacity: 1;
+                background-color: unset;
+                color: unset;
+              }
+            }
+            .owl-prev{
+              background-image: url(../images/righ.png);
+              background-repeat: no-repeat;
+              width:30px;
+              height:30px;
+              opacity: 0.5;
+              margin-#{$start}: 10px;
+              &:hover{
+                opacity: 1;
+                background-color: unset;
+                color: unset;
+              }
+            }
+          }
+        }
+      }
+    }
+}
+
+@media only screen and (max-width:768px) {
+  .main-heaader {
+    .col--edit--background {
+      .main-header__brief {
+        .main-header__brief__buttons {
+          flex-direction: column;
+          justify-content: center;
+
+          .products-btn {
+            margin-left: 0;
+          }
+
+          .app-btn,
+          .products-btn {
+            margin: 8px auto;
+          }
+        }
+
+        .main-header__brief__paragrapgh {
+          font-size: calc(16px + ((22 - 16) * (100vw - 320px) / (1366 - 320)))
+        }
+
+        .main-header__brief__main-head {
+          font-size: calc(24px + ((30 - 24) * (100vw - 320px) / (1366 - 320)));
+
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .main-heaader {
+    .col--edit--background {
+      .main-header__brief {
+        margin-#{$start}: 8%;
+        
+        
+      }
+    }
+  }
+}
+@media only screen and (min-width:1000px) {
+  .col--header--edit{
+    img{height: 100%;}
+  }
+}

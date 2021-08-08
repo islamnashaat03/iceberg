@@ -1,0 +1,34 @@
+.swiper-container {
+  .swiper-wrapper {
+    margin-bottom: 76px;
+
+    .swiper-slide {
+      transform: scale(0.7);
+      transition: .5s;
+      opacity: .7;
+      pointer-events: none;
+
+    }
+
+    .swiper-slide-active {
+      transform: scale(1);
+      transition: .5s;
+      opacity: 1;
+      pointer-events: visible
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+}
+
+.swiper-pagination {
+  .swiper-pagination-bullet-active {
+    background-color: $colorPurple;
+    width: 12px;
+    height: 12px;
+
+  }
+}

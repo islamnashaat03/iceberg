@@ -1,0 +1,75 @@
+.rating {
+  margin-bottom: 75px;
+
+  .rating__brief {
+    text-align: center;
+    margin-bottom: 50px;
+
+    .rating__section__header{
+      justify-content: center;
+    }
+
+    .rating__brief__tittle {
+      font-weight: bold;
+      color: $colorBlue;
+      margin-bottom: 25px;
+    }
+
+    .rating__brief__paragraph {
+      color: $colorGrey;
+      font-size: 14px;
+    }
+  }
+
+  .swiper-container {
+    .swiper-wrapper {
+      .swiper-slide {
+        .my-card {
+          border: 1px solid #bdbdbd;
+          border-radius: 20px;
+          background-color: $colorWhite;
+          margin: 0 15px;
+          box-shadow: 0px 0px 5px 5px rgb(238 238 238 / 75%);
+          margin: 10px;
+          .my-card__img {
+            text-align: center;
+            margin: 20px 0;
+        
+            img {
+              width: 50px;
+            }
+          }
+        
+          .my-card__body {
+            text-align: center;
+            padding: 5px;
+            color: $colorBlue;
+            font-weight: bold;
+        
+            h6 {
+              font-weight: bold;
+              font-size: 22px;
+              margin-bottom: 20px;
+            }
+        
+            p {
+              font-size: 16px;
+        
+              .svg-inline--fa {
+                color: $colorYellow;
+              }
+            }
+        
+            .my-card__body__second-p {
+              margin-bottom: 35px;
+            }
+          }
+        
+          .my-rating {
+            margin: 20px 0;
+          }
+        }
+      }
+    }
+  }
+}

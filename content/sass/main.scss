@@ -1,0 +1,14 @@
+@import './abstract/variables.scss';
+@import './components/generic-components.scss';
+@import "../../node_modules/rfs/scss.scss";
+@import './layout/navbar.scss';
+@import './pages/home-page.scss';
+@import './components/swiper.scss';
+@import './pages/about-us-page.scss';
+@import './components/page-header.scss';
+@import './components/breadcrumb-style-edit.scss';
+@import './pages/products-page.scss';
+body{
+  font-family: $bahijFont;
+}
+@import './layout/footer.scss';

@@ -1,0 +1,72 @@
+.who-are-we {
+  .who-are-we__header-wrapper{
+    text-align: center;
+    margin-bottom: 50px;
+    h3{
+      margin-bottom: 25px;
+      color: $colorBlue;
+    }
+    p{
+      font-size: 12px;
+    }
+    .section__header {
+    justify-content: center;
+  }
+  }
+  .who-are-we__right-side{
+    .who-are-we__right-side__row{
+      display: flex;
+      justify-content: space-around;
+      .who-are-we__right-side__item{
+        flex: 0 0 43%;
+        margin-bottom: 25px;
+        .icon{
+          padding: 10px;
+          font-size: 35px;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: fit-content;
+        }
+        .icon-Mask-Group-260{
+          background-color: rgb(215 190 250 / 38%);;
+        }
+        .icon-Mask-Group-261{
+          background-color: rgb(253 68 99 / 23%);;
+        }
+        .icon-Mask-Group-262{
+          background-color: rgb(255 238 0 / 31%);;
+        }
+        .icon-Mask-Group-263{
+          background-color: rgb(38 220 105 / 16%);
+        }
+        .who-are-we__right-side__tittle{
+          margin: 15px 0;
+          font-weight: bold;
+          color: #001C40;
+        }
+        .who-are-we__right-side__paragraph{
+          color: #37474F;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .who-are-we__left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    .who-are-we__left-side__title{
+      font-weight: bold;
+      font-size: calc(41px + ((47 - 41) * ((100vw - 1366px) / (1920 - 1366))));
+      color: $colorBlue;
+      margin-bottom: 30px;
+    }
+    p{
+      font-size: calc(16px + ((20 - 16) * ((100vw - 1366px) / (1920 - 1366))));
+      margin-bottom: 30px;
+    }
+  }
+}

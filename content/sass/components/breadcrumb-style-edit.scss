@@ -1,0 +1,9 @@
+.breadcrumb{
+  justify-content: center;
+  .breadcrumb-item.active{
+    color: $colorWhite;
+  }
+  .breadcrumb-item+.breadcrumb-item::before{
+    color: $colorWhite;
+  }
+}

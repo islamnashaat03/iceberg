@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Bahij_TheSansArabic-Plain';
+  src: url(./Bahij_TheSansArabic-Plain.eot);
+  src: url(./Bahij_TheSansArabic-Plain.eot?#iefix) format('embedded-opentype'),
+       url(./Bahij_TheSansArabic-Plain.otf) format('otf'),
+       url(./Bahij_TheSansArabic-Plain.svg#Bahij_TheSansArabic-Plain) format('svg'),
+       url(./Bahij_TheSansArabic-Plain.woff) format('woff'),
+       url(./Bahij_TheSansArabic-Plain.woff2) format('woff2'),
+       url(./Bahij_TheSansArabic-Plain.ttf) format('truetype');
+}

@@ -1,0 +1,26 @@
+.features{
+  background-color: rgb(252 180 255 / 16%);
+  padding: 85px;
+  margin-bottom: 50px;
+  .features__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .features__card__img{
+      margin-bottom: 20px;
+    }
+    .features__card__title{
+      margin-bottom: 20px;
+      font-size: calc(24px + ((30 - 24 ) * ((100vw - 1366px ) / (1920 - 1366 ))));
+      font-weight: bold;
+      // @include font-size(1.1rem);
+    }
+    .features__card__paragraph{
+      margin-bottom: 20px;
+      width: 60%;
+      text-align: center;
+      font-size: calc(20px + ((26 - 20 ) * ((100vw - 1366px ) / (1920 - 1366 ))));
+  }
+}
+}

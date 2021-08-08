@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Bahij_TheSansArabic-Plain';
+  src: url(fonts/Bahij-TheSansArabic/Bahij_TheSansArabic-Plain.eot);
+  src: url(fonts/Bahij-TheSansArabic/Bahij_TheSansArabic-Plain.otf);
+  src: url(fonts/Bahij-TheSansArabic/Bahij_TheSansArabic-Plain.svg);
+  src: url(fonts/Bahij-TheSansArabic/Bahij_TheSansArabic-Plain.ttf);
+  src: url(fonts/Bahij-TheSansArabic/Bahij_TheSansArabic-Plain.woff);
+  src: url(fonts/Bahij-TheSansArabic/Bahij_TheSansArabic-Plain.woff2);
+}
+
+$bahijFont:'Bahij_TheSansArabic-Plain';
+$colorPurple:#360083;
+$colorYellow:#FFEE00;
+$colorPink:#FD4463;
+$colorGrey:#707070;
+$colorBackground:#BCBCBC;
+$colorBlue:#000032;
+$colorWhite:#fff;
+$transtion:.5s;

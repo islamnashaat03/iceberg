@@ -1,0 +1,71 @@
+.our-prizes-section{
+  text-align: center;
+  margin-bottom: 70px;
+  .our-prizes-section__brief{
+    margin-bottom: 25px;
+    .our-prizes-section__section__header{
+      justify-content: center;
+    }
+    .our-prizes-section__brief__title{
+      // @extend .our-products-section__brief__title ;
+      font-weight: bold;
+      color: $colorBlue;
+      margin-bottom: 25px;
+      font-size: calc(38px + ((44 - 38) * ((100vw - 1366px) / (1920 - 1366))));
+    }
+    .our-prizes-section__brief__paragrapgh{
+      margin-bottom: 50px;
+    }
+  }
+  .swiper-container {
+    .swiper-wrapper {
+      .swiper-slide {
+        .my-card {
+          border: 1px solid #bdbbbd;
+          border-radius: 10px;
+          box-shadow: 0px 0px 19px 10px rgb(238 238 238 / 75%);
+          margin: 10px;
+          text-align: center;
+          .my-card__img{
+            text-align: center;
+            margin: 35px 0 ;
+            img{width: 100px;}
+          }
+          .my-card__body {
+            // padding: 30px 30px 30px 0;
+            text-align: $start;
+            text-align: center;
+
+            .my-card__body__title {
+              font-weight: bold;
+              margin-bottom: 15px;
+            }
+
+            .my-card__body__paragrapgh {
+              margin-bottom: 35px;
+              color: #666666;
+            }
+
+            .price-btn {
+              font-weight: bold;
+              text-align: center;
+              color: $colorPurple;
+              border: 2px solid $colorPurple;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width:768px) {
+  .our-prizes-section{
+    .our-prizes-section__brief {
+      .our-prizes-section__brief__paragrapgh{
+        width: 68%;
+        margin: auto;
+      }
+    }
+  } 
+}

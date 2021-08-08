@@ -1,0 +1,16 @@
+.header{
+    background-image: url('../images/Group 24399.png');
+    background-size: cover;
+    color: $colorWhite;
+    text-align: center;
+    padding: 10% 0;
+    margin-bottom: 100px;
+    .header__tittle{
+      font-weight: bold;
+      margin-bottom: 25px;
+      font-size: calc(64px + ((70 - 64 ) * ((100vw - 1366px) / (1920 - 1366))));
+    }
+  }
+
+
+

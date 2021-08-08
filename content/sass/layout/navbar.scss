@@ -1,0 +1,48 @@
+.navbar{
+  box-shadow: 0px 5px 11px 0px rgba(73,73,73,0.1);
+  .navbar-nav{
+    .nav-link.active,.show>.nav-link{ 
+      color: $colorPurple;
+    }
+    .nav-link{
+      color: $colorBackground;
+      margin-#{$start}:25px;
+      font-size: 20px;
+      &:hover{
+        color: $colorPurple;
+        transition: $transtion;
+      }
+    }
+    .dropdown-toggle{
+      display: flex;
+      align-items: center;
+      &::after{
+        margin-#{$start}: 10px;
+      }
+      img{
+        margin-#{$end}: 10px;
+      }
+    }
+    .dropdown-item{
+      display: flex;
+      justify-content: space-around;
+      img{width: 35px}
+    }
+  }
+  .contact-btn{
+    @extend.my-button-1;
+    // min-width: 120px;
+    padding: 8px 40px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .navbar-toggler{
+    outline: 0;
+    box-shadow: none;
+    border: 0;
+    &:focus{
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+}

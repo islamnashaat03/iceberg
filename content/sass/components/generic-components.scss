@@ -1,0 +1,82 @@
+
+html {
+  scroll-behavior: smooth;
+}
+body{
+  // height: 20000px;
+  font-family: $bahijFont;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  &:hover{
+    color: inherit;
+  }
+}
+img{
+  max-width: 100%;
+}
+.btn{
+  box-shadow: none;
+  outline: 0;
+}
+.btn:focus{
+  outline: 0;
+  box-shadow: none;
+}
+.my-button-1{
+  background-color: $colorPurple;
+  color:$colorWhite;
+  min-width: 140px;
+  border-radius: 8px;
+}
+.my-button-2{
+  background-color: $colorWhite;
+  color:$colorPurple;
+  border: 1px solid  $colorPurple;
+  min-width: 140px;
+  border-radius: 8px;
+
+}
+.flex-center{
+  display: flex;
+  align-items: center;
+  
+}
+.social-links {
+  display: flex;
+  // justify-content: center;
+  // margin-bottom: 50px;
+
+  a {
+    span {
+      border-radius: 50%;
+      border: 1px solid $colorPurple;
+      font-size: 25px;
+      padding: 8px;
+      margin-#{$end}: 20px;
+      color: $colorPurple;
+
+      &:hover {
+        background-color: $colorPurple;
+        color: $colorWhite;
+        transition: $transtion;
+      }
+    }
+  }
+}
+.section__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  // justify-content: center;
+  color: $colorPurple;
+
+  &::before {
+    content: "";
+    width: 85px;
+    height: 4px;
+    background-color: #fe0;
+    margin-left: 10px;
+  }
+}
