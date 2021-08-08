@@ -1,16 +1,101 @@
-.products{
-  .products__header-wrapper{
+.products {
+  .products__header-wrapper {
     text-align: center;
-    .section__header{
+    margin-bottom: 50px;
+
+    .section__header {
       justify-content: center;
     }
-    h3{
+
+    h3 {
       margin-bottom: 25px;
       color: $colorBlue;
       font-size: calc();
     }
-    p{
+
+    p {
       font-size: 12px;
+    }
+  }
+
+  .products__rows-wrapper {
+    .products__row--edit {
+      margin-bottom: 100px;
+      &:nth-last-of-type(odd){
+        direction: rtl;
+      }
+      &:nth-last-of-type(even){
+        direction: ltr;
+      }
+      .outer {
+        position: relative;
+        &:before {
+          display: block;
+          content: "";
+          width: 100%;
+          padding-top: 56.25%;
+        }
+        > .inner {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+        }
+      }
+      .product__brief {
+        text-align: $start;
+        .product__brief__header {
+          color: $colorBlue;
+          font-size: calc(41px + ((47 - 41) * ((100vw - 1366px) / (1920 - 1366))));
+          font-weight: bold;
+          margin-bottom: 30px;
+        }
+
+        .product__brief__paragrapgh {
+          font-size: 18px;
+        }
+
+        .product__brief__prices {
+          display: flex;
+          justify-content: space-between;
+
+          .product__brief__prices__companies,
+          .product__brief__prices__customer {
+            font-size: calc(22px + ((28 - 22) * ((100vw - 1366px) / (1920 - 1366))));
+            
+
+            .product__brief__prices__price {
+              color: $colorBlue;
+              font-weight: bold;
+            }
+
+            .product__brief__prices__price-kilo {
+              color: $colorYellow;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:992px) {
+  .products{
+    .products__rows-wrapper {
+      .products__row--edit {
+        .product__brief {
+          margin-bottom: 30px;
+          .product__brief__prices{
+            .product__brief__prices__companies,
+          .product__brief__prices__customer{
+            font-size: calc(12px + ((28 - 12) * ((100vw - 320px) / (1366 - 320))));
+          }
+          }
+          .product__brief__paragrapgh{
+            font-size: 16px;
+          }
+        }
+      }
     }
   }
 }
