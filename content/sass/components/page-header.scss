@@ -11,6 +11,18 @@
       font-size: calc(64px + ((70 - 64 ) * ((100vw - 1366px) / (1920 - 1366))));
     }
   }
+  .page-title{
+    text-align: center;
+    margin-bottom: 50px;
+    .page-title__main-head{
+      justify-content: center;
+    }
+    .page-title__head{
+      margin-bottom: 25px;
+      color: #000032;
+    }
+    // .page-title__paragraph{}
+  }
 
 
 

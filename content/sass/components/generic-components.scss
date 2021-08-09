@@ -1,48 +1,57 @@
-
 html {
   scroll-behavior: smooth;
 }
-body{
+
+body {
   // height: 20000px;
   font-family: $bahijFont;
 }
-a{
+
+a {
   text-decoration: none;
   color: inherit;
-  &:hover{
+
+  &:hover {
     color: inherit;
   }
 }
-img{
+
+img {
   max-width: 100%;
 }
-.btn{
+
+.btn {
   box-shadow: none;
   outline: 0;
 }
-.btn:focus{
+
+.btn:focus {
   outline: 0;
   box-shadow: none;
 }
-.my-button-1{
+
+.my-button-1 {
   background-color: $colorPurple;
-  color:$colorWhite;
+  color: $colorWhite;
   min-width: 140px;
   border-radius: 8px;
 }
-.my-button-2{
+
+.my-button-2 {
   background-color: $colorWhite;
-  color:$colorPurple;
-  border: 1px solid  $colorPurple;
+  color: $colorPurple;
+  border: 1px solid $colorPurple;
   min-width: 140px;
   border-radius: 8px;
 
 }
-.flex-center{
+
+.flex-center {
   display: flex;
   align-items: center;
-  
+
 }
+
 .social-links {
   display: flex;
   // justify-content: center;
@@ -65,6 +74,7 @@ img{
     }
   }
 }
+
 .section__header {
   display: flex;
   align-items: center;
@@ -78,5 +88,24 @@ img{
     height: 4px;
     background-color: #fe0;
     margin-left: 10px;
+  }
+}
+
+.outer {
+  position: relative;
+
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 56.25%;
+  }
+
+  >.inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
 }

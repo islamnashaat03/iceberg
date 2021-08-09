@@ -1,0 +1,119 @@
+.contact-us{
+  .row--edit{
+    margin-bottom: 115px;
+    .contact-us-form{
+      position: relative;
+      .contact-us-form__inputs{
+        display: flex;
+        // margin-bottom: 25px ;
+        justify-content: space-between;
+        .form-field{
+          border: 1px solid #D6D6D6;
+          outline: 0;
+          padding: 15px 10px 15px 0;
+          border-radius: 6px;
+          text-align: $start;
+          margin: 15px 5px;
+          flex: 1 1 42%;
+        }
+      }
+      .contact-us-form__inputs-errors{
+        display: flex;
+        margin-bottom: 25px ;
+        justify-content: space-between;
+        position: relative;
+        .error-name{
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+        .error-mobile{
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+      textarea{
+        resize: none;
+        border: 1px solid #D6D6D6;
+        width: 100%;
+        outline: 0;
+        padding: 40px 20px 20px 20px ;
+        border-radius: 6px;
+        margin-bottom: 30px;
+      }
+      .submit-btn{
+        box-shadow: 0;
+        @extend .my-button-1;
+        padding: 12px 80px;
+      }
+    }
+  }
+  .our-adress{
+    .adress{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 75px;
+      p{margin: 0;}
+      a{display: block;}
+      .adress-item{
+        display: flex;
+        align-items: center;
+        margin: 10px ;
+        .icons{
+          font-size: 25px;
+          padding: 12px;
+          border-radius: 6px;
+          margin-#{$end}: 10px;
+          
+        }
+        .icon-phone-call{background-color:#DCFAE7 ; color: #1ECB40;}
+        .icon-envelope{background-color:#FEDCFF ;color: #FD4463;}
+        .icon-location{background-color: #E4D1FF;color: $colorPurple;}
+
+      }
+      .adress__loction{
+        p{width: 62%;}
+      }
+    }
+    .location-map{
+      margin-bottom: 50px;
+    }
+  }
+
+}
+@media screen and (max-width:768px) {
+  .contact-us{
+    .contact-us-form{
+      .contact-us-form__inputs{
+        flex-direction: column;
+        .form-field{
+          margin: 20px 0;
+        }
+      }
+      .contact-us-form__inputs-errors{
+        .error{
+          direction: ltr;
+        }
+        .error-name{
+          top: -110px;
+          left: 0;
+          right: unset;
+        }
+        .error-mobile{
+          top: 0;
+          left: 0;
+        }
+
+      }
+      .error-area{
+        position: absolute;
+        bottom: 15px;
+        left: 0;
+        direction: ltr;
+      }
+    }
+  }
+}

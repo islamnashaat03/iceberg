@@ -59,6 +59,28 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+    if($('.contact-us-page').length > 0 ) {
+      $('#myform').validate({
+        // onfocusout: false,
+        // onkeyup: true,
+        rtl:true,
+        rules : {
+          username:{
+            required: true,
+            minlength: 5 ,
+          },
+          mobile:{
+            required:true,
+            minlength:11,
+    
+          },
+          area:{
+            required:true,
+            minlength:50,
+          },
+      }
+      });
+    }
 })
 
 $(".my-rating").starRating({
