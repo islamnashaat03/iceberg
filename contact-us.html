@@ -1,288 +1,274 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="content/css/vendor/bootstrap.min.css" /> -->
-    <link rel="stylesheet" href="content/css/vendor/bootstrap.rtl.min.css">
-    <link rel="stylesheet" href="content/css/vendor/owl.carousel.min.css" />
-    <link rel="stylesheet" href="content/css/vendor/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="content/css/vendor/iconmoon.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="content/css/vendor/star-rating-svg.css">
-    <link rel="stylesheet" href="content/css/vendor/cmxform.css">
-    <link rel="stylesheet" href="content/css/main-rtl.css" />
-    <title>Iceberg</title>
-  </head>
 
-  <body>
-    <div class="contact-us-page">
-      <!-- START NAV BAR  -->
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-          <a class="navbar-brand" href="#"
-            ><img src="content/images/logo.png" alt=""
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"
-                  >الرئيسة</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about-us.html">عن المصنع </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="products.html">المنتجات </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="app.html">التطبيق </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="blog.html">المدونة </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <img src="content/images/flag-egypt.png" alt="" /> العربية
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      <img src="content/images/flag-english.png" alt="" />
-                      English
-                    </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <a href="contact-us.html" class="btn contact-btn"> اتصل بنا </a>
-          </div>
-        </div>
-      </nav>
-      <!-- END NAV BAR  -->
-      <!-- START HEADER  -->
-      <header class="header">
-        <div class="container-fluid">
-          <h2 class="header__tittle">اتصل بنا</h2>
-          <div style="--bs-breadcrumb-divider: '>>'" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="index.html">الرئيسة</a></li>
-              <li class="breadcrumb-item active" aria-current="page">
-                اتصل بنا 
-              </li>
-            </ol>
-          </div>
-        </div>
-      </header>
-      <!-- END HEADER  -->
-      <!-- START  -->
-      <section class="contact-us">
-        <div class="container">
-          <div class="page-title">
-          <h5 class="section__header page-title__main-head">راسلنا  </h5>
-          <h3 class="page-title__head">ارسل لنا طلباتك او شكاوي او مقترحات</h3>
-          </div>
-          <div class="row row--edit">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 ">
-              <div class="outer">
-                <img src="content/images/Mask Group 265.png" alt="" class="inner">
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 ">
-              <div class="contact-us-form">
-                <form action=""  id="myform">
-                  <div class="contact-us-form__inputs">
-                    <input type="text" class="form-field" placeholder="الاسم" name="username" required>
-                    <input type="tel" class="form-field" placeholder="رقم الموبايل" name="mobile"  required>
-                  </div>
-                  <div class="contact-us-form__inputs-errors mb-4">
-                    <label for="username" id="username-error" class="error error-name"></label>
-                    <label id="mobile-error" class="error error-mobile" for="mobile"></label>
-                  </div>
-                  <textarea name="area" id="" cols="30" rows="5" placeholder="اضف رسالة او طلب او شكوي" style="position: relative;"></textarea>
-                  <label id="area-error" class="error error-area" for="area"></label>
-                  <button type="submit" class="btn submit-btn">ارسال</button>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="our-adress">
-            <div class="page-title">
-              <h5 class="section__header page-title__main-head">عناوينا   </h5>
-              <h3 class="page-title__head">تعرف علي عناويننا و تواصل معنا</h3>
-            </div>
-            <div class="adress">
-              <div class="adress-item">
-                <span class="icon-phone-call icons"></span>
-                <div class="adress__numbers">
-                  <p>+20 000 000 00</p>
-                  <p>+20 000 000 00</p>
-                </div>
-              </div>
-              <div class="adress__emails adress-item">
-                <span class="icon-envelope icons"></span>
-                <div>
-                  <a href="mailto:">someone@gmail.com</a>
-                  <a href="mailto:">someone@gmail.com</a>
-                </div>
-              </div>
-              <div class="adress__loction adress-item">
-                <span class="icon-location icons"></span>
-                <p>القاهرة - 25 العاشر من رمضان الحي التامن بايقي العنوان</p>
-              </div>
-            </div>
-            <div class="location-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418.608329063188!2d31.380956364763012!3d31.0371603174993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79db66165f447%3A0x5f5d5baefd0a0307!2sTeba%20Radiology%20Center!5e0!3m2!1sen!2seg!4v1628495282313!5m2!1sen!2seg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- START  -->
-      <!-- START MAIN FOOTER  -->
-      <footer class="main-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-              <div class="main-footer__coloum">
-                <div class="text-center">
-                  <a href="index.html">
-                    <img src="content/images/logo.png" alt="" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="content/css/vendor/bootstrap.min.css" /> -->
+  <link rel="stylesheet" href="content/css/vendor/bootstrap.rtl.min.css" />
+  <link rel="stylesheet" href="content/css/vendor/owl.carousel.min.css" />
+  <link rel="stylesheet" href="content/css/vendor/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="content/css/vendor/iconmoon.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="content/css/vendor/star-rating-svg.css" />
+  <link rel="stylesheet" href="content/css/vendor/cmxform.css" />
+  <link rel="stylesheet" href="content/css/main-rtl.css" />
+  <title>Iceberg</title>
+</head>
+
+<body>
+  <div class="contact-us-page">
+    <!-- START NAV BAR  -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="content/images/logo.png" alt="" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">الرئيسة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">عن المصنع </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">المنتجات </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="app.html">التطبيق </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">المدونة </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="content/images/flag-egypt.png" alt="" /> العربية
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="content/images/flag-english.png" alt="" />
+                    English
                   </a>
-                </div>
-                <p class="main-footer__coloum__pargrapgh">
-                  مصنع ايس بيردج للايس كريم و الحلويات و المنتجات الغذائية
-                </p>
-                <div class="social-links">
-                  <a href="#"><span class="icon-social-facebook"></span></a>
-                  <a href="#"><span class="icon-twitter"></span></a>
-                  <a href="#"><span class="icon-linkedin"></span></a>
-                  <a href="#"><span class="icon-instagram"></span></a>
-                </div>
-              </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <a href="contact-us.html" class="btn contact-btn"> اتصل بنا </a>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAV BAR  -->
+    <!-- START HEADER  -->
+    <header class="header">
+      <div class="container-fluid">
+        <h2 class="header__tittle">اتصل بنا</h2>
+        <div style="--bs-breadcrumb-divider: '>>'" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">الرئيسة</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              اتصل بنا
+            </li>
+          </ol>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER  -->
+    <!-- START  -->
+    <section class="contact-us">
+      <div class="container">
+        <div class="page-title">
+          <h5 class="section__header page-title__main-head">راسلنا</h5>
+          <h3 class="page-title__head">
+            ارسل لنا طلباتك او شكاوي او مقترحات
+          </h3>
+        </div>
+        <div class="row row--edit">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <div class="outer">
+              <img src="content/images/Mask Group 265.png" alt="" class="inner" />
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-              <div class="main-footer__coloum">
-                <h3 class="main-footer__coloum__title">الصفحات</h3>
-                <div>
-                  <ul class="list-unstyled">
-                    <a href="index.html">
-                      <li>الرئيسة</li>
-                    </a>
-                    <a href="about-us.html">
-                      <li>عن المصنع</li>
-                    </a>
-                    <a href="app.html">
-                      <li>التطبيق</li>
-                    </a>
-                    <a href="products.html">
-                      <li>المنتجات</li>
-                    </a>
-                  </ul>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <div class="contact-us-form">
+              <form action="" id="myform">
+                <div class="contact-us-form__inputs">
+                  <input type="text" class="form-field" placeholder="الاسم" name="username" required />
+                  <input type="tel" class="form-field" placeholder="رقم الموبايل" name="mobile" required />
                 </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-              <div class="main-footer__coloum">
-                <h3 class="main-footer__coloum__title">روابط اخري</h3>
-                <div>
-                  <ul class="list-unstyled">
-                    <a href="blog.html">
-                      <li>المدونة</li>
-                    </a>
-                    <a href="contact-us.html">
-                      <li>اثصل بنا</li>
-                    </a>
-                    <a href="#">
-                      <li>سياسة الاستخدام</li>
-                    </a>
-                    <a href="#">
-                      <li>مساعدة</li>
-                    </a>
-                  </ul>
+                <div class="contact-us-form__inputs-errors mb-4">
+                  <label for="username" id="username-error" class="error error-name"></label>
+                  <label id="mobile-error" class="error error-mobile" for="mobile"></label>
                 </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-              <div class="main-footer__coloum">
-                <h3 class="main-footer__coloum__title">اتصل بنا</h3>
-                <div class="main-footer__coloum__icons">
-                  <ul class="list-unstyled">
-                    <a href="">
-                      <li class="d-flex">
-                        <span class="icon-location icons"></span>
-                        <span
-                          >القاهرة - 25 العاشر من رمضان الحي التامن بايقي
-                          العنوان</span
-                        >
-                      </li>
-                    </a>
-                    <a href="">
-                      <li class="d-flex">
-                        <span class="icon-phone-call icons"></span>
-                        <span>002565852321</span>
-                      </li>
-                    </a>
-                    <a href="mailto:">
-                      <li class="d-flex">
-                        <span class="icon-envelope icons"></span>
-                        <span>Someone@gmail.com</span>
-                      </li>
-                    </a>
-                  </ul>
-                </div>
-              </div>
+                <textarea name="area" id="" cols="30" rows="5" placeholder="اضف رسالة او طلب او شكوي"
+                  style="position: relative"></textarea>
+                <label id="area-error" class="error error-area" for="area"></label>
+                <button type="submit" class="btn submit-btn">ارسال</button>
+              </form>
             </div>
           </div>
         </div>
-      </footer>
-      <!-- END MAIN FOOTER  -->
-      <!-- START FOOTER  -->
-      <div class="footer">
-        <div class="container">
-          <div class="footer__main">
-            <div>
-              <p class="footer__main__paragrapgh">
-                كل الحقوق محفوظة لموقع ايس بيرج 2021 ©
-              </p>
+        <div class="our-adress">
+          <div class="page-title">
+            <h5 class="section__header page-title__main-head">عناوينا</h5>
+            <h3 class="page-title__head">تعرف علي عناويننا و تواصل معنا</h3>
+          </div>
+          <div class="adress">
+            <div class="adress-item">
+              <span class="icon-phone-call icons"></span>
+              <div class="adress__numbers">
+                <p>+20 000 000 00</p>
+                <p>+20 000 000 00</p>
+              </div>
             </div>
-            <div class="footer__crazy-idea">
-              <p class="footer__crazy-idea__paragraph">
-                Made with
-                <span class="icon-Mask-Group-36"
-                  ><span class="path1"></span><span class="path2"></span
-                ></span>
-                by Crazy Idea
+            <div class="adress__emails adress-item">
+              <span class="icon-envelope icons"></span>
+              <div>
+                <a href="mailto:">someone@gmail.com</a>
+                <a href="mailto:">someone@gmail.com</a>
+              </div>
+            </div>
+            <div class="adress__loction adress-item">
+              <span class="icon-location icons"></span>
+              <p>القاهرة - 25 العاشر من رمضان الحي التامن بايقي العنوان</p>
+            </div>
+          </div>
+          <div class="location-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418.608329063188!2d31.380956364763012!3d31.0371603174993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79db66165f447%3A0x5f5d5baefd0a0307!2sTeba%20Radiology%20Center!5e0!3m2!1sen!2seg!4v1628495282313!5m2!1sen!2seg"
+              width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- START  -->
+    <!-- START MAIN FOOTER  -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="main-footer__coloum">
+              <div class="text-center">
+                <a href="index.html">
+                  <img src="content/images/logo.png" alt="" />
+                </a>
+              </div>
+              <p class="main-footer__coloum__pargrapgh">
+                مصنع ايس بيردج للايس كريم و الحلويات و المنتجات الغذائية
               </p>
-              <span class="footer__crazy-idea__span"
-                >Think Out Of The Box
-              </span>
+              <div class="social-links">
+                <a href="#"><span class="icon-social-facebook"></span></a>
+                <a href="#"><span class="icon-twitter"></span></a>
+                <a href="#"><span class="icon-linkedin"></span></a>
+                <a href="#"><span class="icon-instagram"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="main-footer__coloum">
+              <h3 class="main-footer__coloum__title">الصفحات</h3>
+              <div>
+                <ul class="list-unstyled">
+                  <a href="index.html">
+                    <li>الرئيسة</li>
+                  </a>
+                  <a href="about-us.html">
+                    <li>عن المصنع</li>
+                  </a>
+                  <a href="app.html">
+                    <li>التطبيق</li>
+                  </a>
+                  <a href="products.html">
+                    <li>المنتجات</li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="main-footer__coloum">
+              <h3 class="main-footer__coloum__title">روابط اخري</h3>
+              <div>
+                <ul class="list-unstyled">
+                  <a href="blog.html">
+                    <li>المدونة</li>
+                  </a>
+                  <a href="contact-us.html">
+                    <li>اثصل بنا</li>
+                  </a>
+                  <a href="#">
+                    <li>سياسة الاستخدام</li>
+                  </a>
+                  <a href="#">
+                    <li>مساعدة</li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="main-footer__coloum">
+              <h3 class="main-footer__coloum__title">اتصل بنا</h3>
+              <div class="main-footer__coloum__icons">
+                <ul class="list-unstyled">
+                  <a href="">
+                    <li class="d-flex">
+                      <span class="icon-location icons"></span>
+                      <span>القاهرة - 25 العاشر من رمضان الحي التامن بايقي
+                        العنوان</span>
+                    </li>
+                  </a>
+                  <a href="">
+                    <li class="d-flex">
+                      <span class="icon-phone-call icons"></span>
+                      <span>002565852321</span>
+                    </li>
+                  </a>
+                  <a href="mailto:">
+                    <li class="d-flex">
+                      <span class="icon-envelope icons"></span>
+                      <span>Someone@gmail.com</span>
+                    </li>
+                  </a>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- END FOOTER  -->
+    </footer>
+    <!-- END MAIN FOOTER  -->
+    <!-- START FOOTER  -->
+    <div class="footer">
+      <div class="container">
+        <div class="footer__main">
+          <div>
+            <p class="footer__main__paragrapgh">
+              كل الحقوق محفوظة لموقع ايس بيرج 2021 ©
+            </p>
+          </div>
+          <div class="footer__crazy-idea">
+            <p class="footer__crazy-idea__paragraph">
+              Made with
+              <span class="icon-Mask-Group-36"><span class="path1"></span><span class="path2"></span></span>
+              by Crazy Idea
+            </p>
+            <span class="footer__crazy-idea__span">Think Out Of The Box
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- END FOOTER  -->
+  </div>
 
   <script src="content/js/vendor/jQuery v3.5.1.js"></script>
   <script src="content/js/vendor/owl.carousel.min.js"></script>
@@ -290,7 +276,10 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="content/js/vendor/jquery.star-rating-svg.min.js"></script>
   <script src="content/js/vendor/jquery.validate.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+    integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="content/js/main.js"></script>
-  </body>
+</body>
+
 </html>

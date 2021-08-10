@@ -49,3 +49,12 @@
     }
   }
 }
+@media screen and (max-width:768px) {
+  .blog{
+    .row--edit-flex{
+      .my-card{
+        flex: 1 1 100%;
+      }
+    }
+  }
+}
