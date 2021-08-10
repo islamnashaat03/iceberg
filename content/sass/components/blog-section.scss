@@ -27,7 +27,7 @@
   .blog-section__right-side__second-img{
     position: relative;
     margin-bottom: 45px;
-    transition: .3s
+    
     ;
     &:hover .blog-section__right-side__second-img__quote{
       opacity: 1;
@@ -39,7 +39,7 @@
       width: 100%;
       padding: 0 40px;
       color: $colorWhite;
-      // display: none;
+      transition: 2s;
       background-color: rgb(0 0 0 / 76%);
       background-blend-mode: color;
       opacity: 0;
@@ -75,16 +75,18 @@
     .blog-section__left-side__relative-div{
       position: relative;
       margin-bottom: 25px;
-      // transition: 3s;
+      overflow: hidden;
       .blog-section__left-side__fixed-div{
         position: absolute;
         bottom: 0;
+        top: auto;
+        height: fit-content;
         background: #000000b0;
         color: white;
         width: 100%;
         padding: 30px;
-        display: none;
-        transition: 3s;
+        transform: translateY(100%);
+        transition: transform  2s;
         
         .blog-section__left-side__fixed-div__header{
           font-size: calc(32px + ((38 - 32 ) * ((100vw - 1366px) / (1920 - 1366))));
@@ -92,7 +94,8 @@
         }
       }
       &:hover .blog-section__left-side__fixed-div{
-        display: block;
+        transform: translateY(0);
+        
       }
     }
   }
