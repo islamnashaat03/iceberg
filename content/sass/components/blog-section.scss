@@ -22,13 +22,15 @@
       margin-bottom: 25px;
     }
     
-   
+  
   }
   .blog-section__right-side__second-img{
     position: relative;
     margin-bottom: 45px;
+    transition: .3s
+    ;
     &:hover .blog-section__right-side__second-img__quote{
-      display: block;
+      opacity: 1;
     }
     .blog-section__right-side__second-img__quote{
       position: absolute;
@@ -37,9 +39,10 @@
       width: 100%;
       padding: 0 40px;
       color: $colorWhite;
-      display: none;
+      // display: none;
       background-color: rgb(0 0 0 / 76%);
       background-blend-mode: color;
+      opacity: 0;
       .blog-section__right-side__second-img__quote__first-line{
         text-align: $start;
         font-size: calc(40px + ((46 - 40 ) * ((100vw - 1366px) / (1920 - 1366))));
@@ -59,7 +62,7 @@
         margin-bottom: 0;
       }
     }
-   
+  
   }
   .read-more-btn{
     @extend .my-button-2;
@@ -72,7 +75,7 @@
     .blog-section__left-side__relative-div{
       position: relative;
       margin-bottom: 25px;
-      transition: 33s;
+      // transition: 3s;
       .blog-section__left-side__fixed-div{
         position: absolute;
         bottom: 0;
@@ -81,7 +84,8 @@
         width: 100%;
         padding: 30px;
         display: none;
-        transition: 33s;
+        transition: 3s;
+        
         .blog-section__left-side__fixed-div__header{
           font-size: calc(32px + ((38 - 32 ) * ((100vw - 1366px) / (1920 - 1366))));
           font-weight: bold;
