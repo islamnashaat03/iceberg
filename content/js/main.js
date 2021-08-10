@@ -81,6 +81,38 @@ var swiper = new Swiper(".mySwiper", {
       }
       });
     }
+
+
+    
+        
+
+ 
+  
+
+  // playvideo
+  const video = document.getElementById("video");
+  const playIcon = document.getElementById("playIcon");
+
+  function togglePlay() {
+      if (video.paused || video.ended) {
+          video.play();
+      } else {
+          video.pause();
+      }
+  }
+
+  playIcon.addEventListener("click", togglePlay);
+  video.addEventListener("playing", function () {
+    playIcon.style.opacity = 0;
+  });
+  video.addEventListener("pause", function () {
+    playIcon.style.opacity = 1;
+  });
+
+
+  
+
+
 })
 
 $(".my-rating").starRating({

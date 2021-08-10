@@ -1,10 +1,7 @@
 .blog{
-  .row--edit-flex{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
+  margin-bottom: 100px;
     .my-card{
-      margin: 25px;
+      // margin: 25px;
       flex: 1 1 25%;
       height: 100%;
       .my-card__body{
@@ -28,7 +25,7 @@
       }
       
     }
-}
+
 .read-more-btn{
   color: $colorPurple;
   text-align: center;
