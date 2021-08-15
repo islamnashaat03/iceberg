@@ -31,5 +31,14 @@
       color: $colorBlue;
     }
   }
-
+  // .img-class{
+  //   display: none;
+  // }
+}
+@media screen and (max-width:991px) {
+  .application-details{
+    .img-class{
+      display: none;
+    }
+  }
 }
