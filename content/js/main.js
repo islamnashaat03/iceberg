@@ -12,6 +12,9 @@ const playIcon = document.getElementById("playIcon");
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     loop: true,
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true,
     margin: 10,
     navText: ["", ""],
     // rewindNav : true,
@@ -92,6 +95,13 @@ $(document).ready(function () {
         video.pause();
       }
     }
+    playIcon.addEventListener("click", togglePlay);
+    video.addEventListener("playing", function () {
+      playIcon.style.opacity = 0;
+    });
+    video.addEventListener("pause", function () {
+      playIcon.style.opacity = 1;
+    });
   }
   if ($('.blog-page').length > 0 ){
     // playvideo
@@ -103,26 +113,14 @@ $(document).ready(function () {
         video.pause();
       }
     }
+    playIcon.addEventListener("click", togglePlay);
+    video.addEventListener("playing", function () {
+      playIcon.style.opacity = 0;
+    });
+    video.addEventListener("pause", function () {
+      playIcon.style.opacity = 1;
+    });
   }
-
-  //   // playvideo
-
-
-  // function togglePlay() {
-  //   if (video.paused || video.ended) {
-  //     video.play();
-  //   } else {
-  //     video.pause();
-  //   }
-  // }
-
-  playIcon.addEventListener("click", togglePlay);
-  video.addEventListener("playing", function () {
-    playIcon.style.opacity = 0;
-  });
-  video.addEventListener("pause", function () {
-    playIcon.style.opacity = 1;
-  });
 });
 
 $(".my-rating").starRating({
