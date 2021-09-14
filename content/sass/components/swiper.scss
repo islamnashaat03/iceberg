@@ -1,6 +1,8 @@
 .swiper-container {
+  position: relative;
+
   .swiper-wrapper {
-    margin-bottom: 76px;
+    margin-bottom: 50px;
 
     .swiper-slide {
       transform: scale(0.7);
@@ -25,6 +27,7 @@
 }
 
 .swiper-pagination {
+  position: unset;
   .swiper-pagination-bullet-active {
     background-color: $colorPurple;
     width: 12px;
