@@ -1,6 +1,7 @@
 @import './abstract/variables.scss';
 @import './components/generic-components.scss';
 @import "../../node_modules/rfs/scss.scss";
+@import './components/scrolltotop';
 @import './layout/navbar.scss';
 @import './pages/home-page.scss';
 @import './components/swiper.scss';
@@ -10,7 +11,6 @@
 @import './pages/products-page.scss';
 @import './pages/application-page.scss';
 @import './components/contact-us.scss';
-// @import './pages/blog-page.scss';
 @import './components/blog.scss';
 @import './pages/article-page.scss';
 body{
